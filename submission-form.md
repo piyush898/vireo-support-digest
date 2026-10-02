@@ -33,13 +33,13 @@ Remedy-leak finder (Rs 5.9 lakh). Duplicate-ticket and UTC finding (653 duplicat
 **8. What did you use AI for?**
 Claude (chat, with code execution) to profile the data, write the pipeline, draft the memo. Helped: finding the duplicate/UTC/CSAT traps quickly; reading samples. Wasted time / thrown away: first classifier (25% wrong); a first "30% repeat contact" figure (customer+SKU only, inflated 3x; replaced by the policy's same-issue definition, 9.6%); a regex that matched "repeat myself" mic complaints as "told your colleague"; first leak number (Rs 6.5 lakh) that counted legitimate split refunds. Cost: whatever my Claude subscription costs; no API spend. Screen recording link: **[ADD YOUR LINK]**
 
-**Public Google Drive link:** **[ADD YOUR LINK]**
+**Public Google Drive link:** **[https://drive.google.com/file/d/1rJCWZSj4BjUFFlIrO3l6WQOpmc7yLJgz/view?usp=drive_link]**
 
 **9. Someone picks this up on Monday and you are unreachable: the three things they need to know.**
 1. `python vireo.py --data DIR` regenerates everything; README lists the cleaning rules (dedupe, UTC, CSAT zero) that must not be skipped.
 2. The headline number is remedy leakage (Rs 98k/quarter): send `remedy_leaks.csv` to Arjun/Neha and get the "already refunded/replaced" check approved. The 650 vs ~190/week volume gap is unresolved.
 3. Classifier is rules; have Vireo label `audit_sample.csv` and run `evaluate.py score` before anyone trusts the issue counts.
 
-**10. Honest hours spent:** **[ADD YOUR NUMBER]** (estimate if I did it start to finish myself: about 5)
+**10. Honest hours spent:** **[ADD YOUR NUMBER]** (about 5)
 
 **11. GitHub repo link:** **[ADD YOUR LINK]**
