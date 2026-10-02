@@ -9,10 +9,10 @@ Rs 0. No paid calls; a full run on 11,875 tickets takes about a minute on a lapt
 **3. How do you know it works?**
 Classifier: two random samples of 40 tickets each, read by me against the rule label. Round 1 (first rules): 10/40 wrong (25%). Rules rewritten. Round 2: 2/40 wrong (5%), 1/40 unlabelled. One rule line fixed afterwards, so round 2 is no longer unseen: expect 5-8% wrong. Judged by me with an AI assistant, not by a Vireo agent. Gets wrong: short vague messages, mixed-issue messages, a delivery message mentioning a refund, watch touch faults, Hinglish. Remedy finder: 5 flagged orders read end to end; not all 199 checked. Data cleaning verified by smoke tests (unique IDs, resolved >= created, no CSAT zeros). `evaluate.py` plus a blank 60-row sheet lets Vireo measure it independently.
 
-**4. Did you change, narrow, or push back on the ask?** *(can only raise your score)*
+**4. Did you change, narrow, or push back on the ask?** **
 Yes. (a) Leaderboard kept (Priya said it stays) but ranked within team, with repeat rate and CSAT beside volume; Tier 2 shown in days, per policy s6 and Neha's request. (b) Digest groups by the customer's text, not the bot tag (14% "Other", ~29% differ). (c) Business goal is not about reading tickets: Arjun said only contact or cost reduction earns its keep, so the headline is leak reduction. (d) Used Rs 290 per contact (policy), not Rs 180 (Arjun). (e) Left breaches off the leaderboard even though the policy reports them against the resolving agent: email morning/night breach ~15% vs ~7% on day shift, a staffing pattern.
 
-**5. What is wrong with what you are handing us?** *(can only raise your score)*
+**5. What is wrong with what you are handing us?** **
 - The tool itself contains no AI model: it was built with AI help but classifies with keyword rules. The brief says 'AI-assisted'; if you want a model in the loop, `classify()` is the swap-in point (an LLM fallback for the 2% unlabelled tickets would cost well under Rs 10 a month) but I have not built or tested it.
 - Classifier is keyword rules: ~5-8% wrong, brittle to new phrasing. 2% unlabelled.
 - Audit labels were mine, not independent. Round 2 sample was partly tuned on.
