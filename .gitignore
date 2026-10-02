@@ -1,0 +1,6 @@
+venv/
+data/
+out/
+__pycache__/
+audit_sample.csv
+.DS_Store

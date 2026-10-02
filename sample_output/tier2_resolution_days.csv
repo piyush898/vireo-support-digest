@@ -1,0 +1,7 @@
+agent_id,name,team,tier,site,shift,closed_per_week,closed_total,repeat_rate_30d,csat_avg,csat_n,median_days_to_resolve
+A3039,Vivaan Kulkarni,Escalations & Warranty,2,Indore,Morning,1.0,20,0.05,3.11,9,8.2
+A3040,Sai Sharma,Escalations & Warranty,2,Bengaluru,Day,2.0,35,0.114,2.93,14,5.1
+A3041,Deepak Mathew,Escalations & Warranty,2,Indore,Morning,1.0,18,0.167,3.29,7,7.6
+A3042,Aishwarya Kaur,Escalations & Warranty,2,Bengaluru,Morning,1.0,19,0.053,2.11,9,5.3
+A3043,Rahul Gupta,Escalations & Warranty,2,Bengaluru,Morning,1.0,21,0.0,2.8,10,3.4
+A3044,Meera Joshi,Escalations & Warranty,2,Indore,Day,4.0,38,0.053,2.93,15,4.6
